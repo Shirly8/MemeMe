@@ -3,7 +3,8 @@
 Welcome to MemeMe, a platform to share your memes! Sort of like Reddit, but specifically to capture funny relatable content or imitation of culture or real-life scenarios with gifs, images, and captures.  This application allows users to log in, sign up, create a post with a funny caption, and search for a GIF that captures the essence of their memes.
 
 ## Demonstration Video: https://youtu.be/tGG4IqhZIlc
-![Video]([https://example.com/path/to/your/gif.gif](https://github.com/Shirly8/MemeMe/blob/48bb7252e2b5f30e5c9bcbf4a82cc248b3c5633b/quick.MP4))
+![Demonstration GIF](https://github.com/Shirly8/MemeMe/blob/88ddd591183360969957114b8b35ce8909d35709/quick.gif)
+
 
 
 ## Built With 🛠️
