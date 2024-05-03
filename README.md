@@ -22,9 +22,12 @@ Welcome to MemeMe, a platform to share your memes! Sort of like Reddit, but spec
 1. Clone the repo
    ```sh
    git clone https://github.com/your_username_/MemeMe.git
-2. Install
+2. Navigate
+    ```sh
+   cd express_js
+4.  Install
    ```bash
    npm install
-3. Run
+4. Run
     ```bash
     node server.js
