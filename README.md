@@ -1,7 +1,9 @@
 # MemeMe 🎭 
-Welcome to MemeMe, a platform to share your memes! Sort of like Reddit, but specifically for to capture funny relatable content or imitation of culture or real-life scenarios with gifs, images, and captures.  This application allows users to log in, sign up, create a post with a funny caption, and search for a gif that captures the essence of their memes.
 
-## Demonstration Video:https://youtu.be/tGG4IqhZIlc
+
+Welcome to MemeMe, a platform to share your memes! Sort of like Reddit, but specifically to capture funny relatable content or imitation of culture or real-life scenarios with gifs, images, and captures.  This application allows users to log in, sign up, create a post with a funny caption, and search for a GIF that captures the essence of their memes.
+
+## Demonstration Video: https://youtu.be/tGG4IqhZIlc
 
 ## Built With 🛠️
 - Node.js
@@ -25,5 +27,5 @@ Welcome to MemeMe, a platform to share your memes! Sort of like Reddit, but spec
    ```bash
    npm install
 3. Run
-    '''bash
+    ```bash
     node server.js
