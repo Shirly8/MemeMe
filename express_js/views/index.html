@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mememe</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+
+</head>
+
+<body>
+    <!--SITE HEADER AND LOGIN-->
+    <div class="container">
+        <h1>Meme<span style="color: #FF5757">Me</span></h1>
+        <h3>Welcome to MemeMe. We all live the same lives. Create an account to turn your relatable experience into a meme. Or scroll down to see others </h3>
+        <div id="Login">
+            <p style="color: #84CAE8;">Enter your Username and Password. If you have an account, click Login. If you are a new user, press Sign Up</p>
+
+            Username:
+            <input type='text' id="Username" placeholder="Enter your Username">
+
+            Password:
+            <input type='text' id="Password" placeholder="Enter your password">
+
+            <button id="loginButton" class="create" style="font-size:12px; width:50%">Login</button>
+            <button id="SignUpButton" class="create" style="font-size:12px; width:50%">Sign Up</button>
+        </div>
+        <!-- MAIN AREA -->
+        <div style="display: none;" id="Main">
+            <button id="createButton" class="create">Create</button>
+
+            <h3><div id="Submitted"></div></h3>
+
+            <!--  FORM -->
+            <div style="display:none;" class="FormContainer" id="FormContainer">
+                <form id="capsuleForm">
+
+                    <h3>What's something relatable that you would like to share?</h3><br>
+                    <label>Caption</label>
+
+                    <textarea id="caption" name="title"> </textarea>
+
+                    Search for a gif to complement it: <input type="text" id="gifSearchInput" />
+                    <button id="searchButton" style="margin-bottom: 50px; width:auto; margin:0%">Search</button>
+
+                    <div class="results-container">
+                        <!-- CAROUSEL BOX DISPLAYING ALL THE GIFS -->
+                    </div>
+                    <div id="selectedGif"></div>
+
+                    <br>
+                    <button id="submitButton" class="create" style="margin-top:30px">Submit Post</button>
+                </form>
+            </div>            
+        </div>
+
+        <!--POST AREA-->
+        <h1> LATEST MEMES </h1>
+        <div id = "postSection"></div>
+    <script id="eachPost" type="text/x-handlebars-template">
+        {{#each posts}}
+            <div class="eachPost">
+                <h4>{{caption}}</h4>
+                <img src="{{gif}}" alt="Meme">
+                <p>Created by {{username}} on {{date}}</p>
+
+                {{#if loggedUser}}
+                  <button class="deleteButton" style="margin-bottom:10px;" data-post-id="{{postId}}">Click to Delete</button>
+                {{/if}}
+
+                {{#if adminRole}}
+                <button class="deleteButton" style="margin-bottom:10px;" data-post-id="{{postId}}">Click to Delete</button>
+                {{/if}}
+
+
+            </div>
+        {{/each}}
+    </script>
+
+    <script src="js/script.js"></script>
+    <script src="js/authenticate.js"></script>
+
+
+
+    </script>
+</body>
+
+</html>
