@@ -1,42 +1,29 @@
-NAME: Shirley (Bi Yi) Huang 101185496
+# MemeMe 🎭 
+Welcome to MemeMe, a platform to share your memes! Sort of like Reddit, but specifically for to capture funny relatable content or imitation of culture or real-life scenarios with gifs, images, and captures.  This application allows users to log in, sign up, create a post with a funny caption, and search for a gif that captures the essence of their memes.
 
-DEMONSTRATING VIDEO: https://youtu.be/tGG4IqhZIlc
+## Demonstration Video:https://youtu.be/tGG4IqhZIlc
 
+## Built With 🛠️
+- Node.js
+- Express.js
+- SQLite.js
+- GIPHY API
+- Crypto Password
 
-INSTALL INSTRUCTIONS: 
-> cd fp
-> cd express_js
-> npm install
+## Features 💡
+- **User Authentication** 
+- **Meme Creation**
+- **Meme Sharing**
+- **Latest Memes**
+- **Admin Control to delete post**
 
-
-LAUNCH INSTRUCTIONS: 
-> node server.js
-
-
-TESTING INSTRUCTIONS :
-http://localhost:3000/
-http://localhost:3000
-
-
-NEW USER: 
-Enter a username and password then press 'Sign Up'.
-An alert will prompt you to click 'Login'
-To Login, enter your Username and Password, then press 'Login'
-
-CREATING POST
-To create a meme, press the button 'Create'
-Enter a caption, then search for a gif by entering a text and pressing 'Enter' on keyboard or hitting Search
-Click on the desired gif
-If you want it to be posted, click 'Submit'
-
-VIEWING POST
-Scroll down to see all created post
-
-DELETING POST
-If the post belongs to the user, click 'Delete' button
-
-
-TO TEST FOR ADMIN FUNCTIONALITY
-Username: ShirleyHuang
-Password: COMP2406
-
+## Installation 🚀
+1. Clone the repo
+   ```sh
+   git clone https://github.com/your_username_/MemeMe.git
+2. Install
+   ```bash
+   npm install
+3. Run
+    '''bash
+    node server.js
